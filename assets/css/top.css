@@ -33,24 +33,6 @@ body div ul li {
   font-size: 150%;
 }
 
-/*========top画像のスライドショー  ============*/
-.top_pic {
-  width: 700px;
-  height: auto;
-}
-
-.top_silde {
-  position: relative;
-  width: 50%;
-  height: 500px;
-  padding-top: 110px;
-  text-align: center;
-}
-
-.top_silde img {
-  position: absolute;
-}
-
 button {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -157,46 +139,101 @@ button {
   display: block;
 }
 
-h1 {
-  font-size: 200%;
-  font-weight: 600;
-  text-align: center;
+.title {
+  background-image: url("../../img/main_pic.jpg");
+  background-repeat: no-repeat;
+  background-size: 95% auto;
+  padding: 400px 20px 8px 20px;
+  opacity: 0.9;
 }
 
-.title {
-  padding: 6% 6% 6% 6%;
+h1 {
+  font-size: 300%;
+  margin: 2% 5% 2% 2%;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
 }
 
 span {
-  font-size: 150%;
+  font-size: 100%;
+  color: white;
+  opacity: 0.8;
+}
+
+/*========top画像のスライドショー  ============*/
+.top_pic {
+  width: 700px;
+  height: auto;
+}
+
+.top_silde {
+  position: relative;
+  width: 50%;
+  height: 500px;
+  margin: 0 0 3% 2%;
+}
+
+.top_silde img {
+  position: absolute;
+}
+
+.sub_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .item {
   background-color: #f8f5f2;
   color: #b37c49;
-  width: 40%;
+  width: 35%;
   height: 55%;
-  border-radius: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1%;
+  margin: 1%;
+  border-radius: 30px 0 10px 0;
 }
 
 h2 {
-  color: #855223;
+  color: white;
   font-size: 150%;
+  padding: 0.5%;
+  background-color: black;
+  letter-spacing: 5px;
+  line-height: 1.5;
+  display: inline-block;
 }
 
 .coffee {
-  height: 50%;
-  width: 50%;
-  border-radius: 30px 0 10px 0;
+  height: 60%;
+  width: 75%;
+  text-align: center;
+}
+
+h3 {
+  font-size: 300%;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, transparent), color-stop(70%, white));
+  background: linear-gradient(transparent 60%, white 70%);
+  margin: 2% 80% 2% 2%;
 }
 
 .slide {
   margin: auto;
   width: 90%;
+  height: 40%;
 }
 
 .slideimg {
-  height: 200px;
+  height: 50px;
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
 }
